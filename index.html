@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">My Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="mobile-nav">
+        <div class="logo">My Portfolio</div>
+        <div class="menu">
+            <div class="menu-icons" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__text">
+            <p class="section__text__p1">I'm <strong>Nguyen Vu Thuy Duong</strong>, a final year software engineering student. I'm passionate about technology and programming. I am eager to explore myself more and apply my skills and knowledge to the real-world problems.</p>
+            <br>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-1"
+                onclick="window.open('./assets/documents/DuongNguyen_CV.pdf')"
+                >
+                View Resume
+                </button>
+            </div>
+            <br>
+            <div id="socials-container">
+                <img
+                src="https://skillicons.dev/icons?i=linkedin"
+                alt="My LinkedIn profile"
+                class="contact-icon"
+                onclick="location.href='https://www.linkedin.com/in/duong-nguyen-vu-thuy-5345541b9/'"
+                />
+                <img
+                src="https://skillicons.dev/icons?i=github"
+                alt="My Github profile"
+                class="contact-icon"
+                onclick="location.href='https://github.com/DarcieNg'"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="title">Skills</h1>
+        <br>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3 class="about-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=react"
+                                alt="React icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>React</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=javascript"
+                                alt="JavaScript icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=html"
+                                alt="HTML icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=css"
+                                alt="CSS icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="about-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=java"
+                                alt="Java icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=c"
+                                alt="C icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>C</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=cpp"
+                                alt="C++ icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>C++</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=python"
+                                alt="Python icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=swift"
+                                alt="Swift icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Swift</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="about-sub-title">Framework</h2>
+                    <div class="article-container framework">
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=spring"
+                                alt="Spring icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Spring boot</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=flask"
+                                alt="Flask icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Flask</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=bootstrap"
+                                alt="Bootstrap icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Bootstrap</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="https://skillicons.dev/icons?i=tailwind"
+                                alt="Tailwind icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Tailwind CSS</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <br>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/project-1.png"
+                            alt="Project 1"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="about-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                            Github
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                        src="./assets/project-1.png"
+                        alt="Project 1"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="about-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                    >
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                        src="./assets/project-1.png"
+                        alt="Project 1"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="about-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                    >
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                        src="./assets/project-1.png"
+                        alt="Project 1"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="about-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                    >
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                        src="./assets/project-1.png"
+                        alt="Project 1"
+                        class="project-img"
+                    />
+                </div>
+                <h2 class="about-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                    >
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
