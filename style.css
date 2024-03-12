@@ -258,7 +258,7 @@ section {
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    width: 15rem;
+    max-width: 15rem;
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -320,16 +320,18 @@ article .icon {
 
 .project-title {
     margin: 1rem;
+    height: 5rem;
     color: black;
 }
+
+.project-img {
+    border-radius: 1.5rem;
+    border-color: rgb(163, 163, 163);
+    width: 90%;
+    height: 150px;
+}  
 
 .project-btn {
     font-weight: 600;
     transition: all 0.3s ease;
-}
-  
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
 }
